@@ -10,7 +10,7 @@ driver.find_element(By.XPATH , '//*[@id="auth-qr-form"]/div/button').click()
 sleep(2)
 
 driver.find_element(By.XPATH , '//*[@id="sign-in-phone-number"]').clear() # Clear the number field
-driver.find_element(By.XPATH , '//*[@id="sign-in-phone-number"]').send_keys('+989301109668') #input the number
+driver.find_element(By.XPATH , '//*[@id="sign-in-phone-number"]').send_keys(input("Please write your number with code countery like this : +989125201234")) #input the number
 sleep(5)
 
 driver.find_element(By.XPATH , '//*[@id="auth-phone-number-form"]/div/form/button[1]/div').click() #click on the next button
@@ -20,7 +20,7 @@ sleep(15)
 driver.find_element(By.XPATH , '//*[@id="sign-in-code"]').send_keys(input('Pleas enter the code was sended for you: '))
 sleep(3)
 
-driver.find_element(By.XPATH , '//*[@id="sign-in-password"]').send_keys('Erfan9668')
+driver.find_element(By.XPATH , '//*[@id="sign-in-password"]').send_keys(input('Please enter your password in telegram: '))
 sleep(1)
 
 # Click on the next button and login ↓
